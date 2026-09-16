@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>__MSG_extensionName__</title>
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <h1 id="extension-name"></h1>
+        <!-- <p id="extension-subtitle"></p> -->
+      </header>
+
+      <label class="setting">
+        <span class="setting-copy">
+          <span id="setting-label" class="setting-title"></span>
+          <span id="setting-state" class="setting-state" aria-live="polite"></span>
+        </span>
+        <span class="switch">
+          <input
+            id="hide-excluded"
+            type="checkbox"
+            role="switch"
+            aria-labelledby="setting-label"
+            aria-describedby="setting-state setting-error"
+            disabled
+          >
+          <span class="track" aria-hidden="true"></span>
+        </span>
+      </label>
+      <p id="setting-error" class="setting-error" role="alert" hidden></p>
+
+      <section class="page-section" aria-labelledby="page-heading">
+        <h2 id="page-heading"></h2>
+        <p
+          id="page-status"
+          class="page-status"
+          data-kind="muted"
+          aria-live="polite"
+        ></p>
+      </section>
+
+      <p id="visibility-note" class="note"></p>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

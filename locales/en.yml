@@ -1,0 +1,21 @@
+# Browser UI language selects the locale; English is the fallback.
+extensionName: Money Forward Transfers Hider
+extensionDescription: An unofficial extension that hides transfers and transactions excluded from calculations in Money Forward ME.
+documentLanguage: en
+popup:
+  unofficial: Unofficial extension for Money Forward ME
+  toggleLabel: Hide transfers and excluded transactions
+  loading: Loading settings…
+  enabled: 'On: matching transactions are hidden'
+  disabled: 'Off: matching transactions are shown'
+  saving: Saving…
+  unavailable: Settings unavailable
+  currentPage: Current page
+  checking: Checking…
+  unsupported: Open Money Forward ME, or reload the current tab.
+  detected: 'Transfers / excluded transactions in the list: $1'
+  noneDetected: No transfers or excluded transactions found in the transaction list.
+  pageError: Could not check the current page.
+  saveError: Could not save the setting. The previous setting has been restored.
+  loadError: Could not load settings. Close and reopen this popup to try again.
+  note: Changes visibility only. Transactions and calculation results in Money Forward ME are not modified.

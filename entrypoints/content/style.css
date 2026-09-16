@@ -1,0 +1,5 @@
+/* falseが読み込まれるまでは既定値の非表示を適用し、初期表示のちらつきを抑える。 */
+html:not([data-mfth-hide-excluded="false"]) tr.transaction_list.mf-grayout,
+html:not([data-mfth-hide-excluded="false"]) table.calendar-tooltip-table tbody > tr.gray {
+  display: none !important;
+}
