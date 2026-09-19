@@ -38,7 +38,6 @@ export default defineConfig({
       "package.json",
       "pnpm-lock.yaml",
       "README.md",
-      "README.en.md",
       ".npmrc",
       ".gitignore",
       "tsconfig.json",
