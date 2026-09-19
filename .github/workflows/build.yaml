@@ -12,16 +12,16 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [26.x, 24.x]
+        node-version: [26, 24]
 
     steps:
     - uses: actions/checkout@v7
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v7
+    - uses: pnpm/setup@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: pnpm
+        runtime: node@${{ matrix.node-version }}
+        cache: true
+        install: false
 
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
@@ -29,11 +29,11 @@ jobs:
     - name: Type check
       run: pnpm typecheck
 
-    - name: Test
-      run: pnpm test
-
     - name: Build
       run: pnpm build
+
+    - name: Test
+      run: pnpm test
 
     - uses: actions/upload-artifact@v7
       with:
