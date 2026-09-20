@@ -23,6 +23,7 @@ export default defineContentScript({
     globalThis.__mfthExcludedHiderLoaded = true;
 
     let hideExcluded = true;
+    let changedSinceLoad = false;
 
     const applyPreferenceToDocument = (): void => {
       const apply = (): void => {
@@ -41,7 +42,8 @@ export default defineContentScript({
 
     browser.storage.onChanged.addListener((changes, areaName) => {
       const nextValue = changes[STORAGE_KEY]?.newValue;
-      if (areaName === "local" && typeof nextValue === "boolean") {
+      if (areaName === "sync" && typeof nextValue === "boolean") {
+        changedSinceLoad = true;
         hideExcluded = nextValue;
         applyPreferenceToDocument();
       }
@@ -66,10 +68,14 @@ export default defineContentScript({
 
     void getHideExcluded()
       .then((storedValue) => {
-        hideExcluded = storedValue;
+        if (!changedSinceLoad) {
+          hideExcluded = storedValue;
+        }
       })
       .catch(() => {
-        hideExcluded = true;
+        if (!changedSinceLoad) {
+          hideExcluded = true;
+        }
       })
       .finally(applyPreferenceToDocument);
   }

@@ -17,17 +17,17 @@ describe("preferences", () => {
     await expect(getHideExcluded()).resolves.toBe(DEFAULT_HIDE_EXCLUDED);
   });
 
-  it("keeps the existing storage key for update compatibility", async () => {
+  it("saves new preferences to sync storage", async () => {
     await setHideExcluded(false);
 
     await expect(getHideExcluded()).resolves.toBe(false);
-    await expect(browser.storage.local.get(STORAGE_KEY)).resolves.toEqual({
+    await expect(browser.storage.sync.get(STORAGE_KEY)).resolves.toEqual({
       [STORAGE_KEY]: false
     });
   });
 
   it("falls back when stored data is malformed", async () => {
-    await browser.storage.local.set({ [STORAGE_KEY]: "invalid" });
+    await browser.storage.sync.set({ [STORAGE_KEY]: "invalid" });
     await expect(getHideExcluded()).resolves.toBe(DEFAULT_HIDE_EXCLUDED);
   });
 });
