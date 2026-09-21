@@ -1,5 +1,7 @@
 # 🚀 マネーフォワード振替非表示
 
+[➡️ English version (英語版)](README.en.md)
+  
 **マネーフォワード振替非表示** は、マネーフォワード ME Web版で振替および手動で計算対象外にした明細を画面上から隠すブラウザ拡張機能です。
 
 ![Screenshot](./screenshots/1280x800-chrome.png)

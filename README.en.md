@@ -1,5 +1,7 @@
 # 🚀 Money Forward Transfers Hider
 
+[➡️ 日本語版 (Japanese version)](README.md)
+
 **Money Forward Transfers Hider** is a browser extension that hides transfers and transactions manually excluded from calculations on the Money Forward ME website.
 
 ![Screenshot](./screenshots/1280x800-chrome.png)

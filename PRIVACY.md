@@ -2,7 +2,7 @@
 
 適用開始日: 2026-09-21
 
-[➡️ English version (英語版)](PRIVACY_en.md)
+[➡️ English version (英語版)](PRIVACY.en.md)
 
 ## 1. 概要
 
