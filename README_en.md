@@ -28,3 +28,7 @@ If you have many transfers or excluded transactions in Money Forward ME, this ma
 ## Disclaimer
 
 This is not an official extension of Money Forward HOME, Inc. or Money Forward, Inc.
+
+## Privacy
+
+For information on how this extension handles data, please see the [Privacy Policy](./PRIVACY_en.md).
