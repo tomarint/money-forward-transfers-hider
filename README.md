@@ -6,17 +6,17 @@
 
 ![Screenshot](./screenshots/1280x800-chrome.png)
 
-![Screenshot](./screenshots/1280x800-firefox.png)
-
 ![Screenshot](./screenshots/1280x800-edge.png)
+
+![Screenshot](./screenshots/1280x800-firefox.png)
 
 ## インストール方法
 
 お使いのブラウザの拡張機能ストアからインストールできます：
 
-- [Chrome / Brave](https://chrome.google.com/webstore)
-- [Firefox](https://addons.mozilla.org/ja/firefox/)
-- [Edge](https://microsoftedge.microsoft.com/addons)
+- <a href="https://chromewebstore.google.com/detail/money-forward-transfers-h/oofjhejmomjgdhfnplhebhbccapljaie" target="_blank">Chrome / Brave</a>
+- <a href="https://microsoftedge.microsoft.com/addons/detail/money-forward-transfers-h/noildcjonpiommfamekbmbfgojdokpij" target="_blank">Edge</a>
+- <a href="https://addons.mozilla.org/ja/firefox/addon/money-forward-transfers-hider/" target="_blank">Firefox</a>
 
 ## 使用方法
 
